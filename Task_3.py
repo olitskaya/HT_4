@@ -9,7 +9,7 @@ def is_prime(number):
     else:          
         for i in range(2, number):
             if number % i == 0:
-                state = False
+                result = False
                 break
     if result == True:
         print(number, 'is a prime number.')
