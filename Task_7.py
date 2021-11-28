@@ -12,7 +12,9 @@ def user_list(n):
 
 def same(list_1):
     elements = {i:list_1.count(i) for i in list_1}
-    print('The number of identical elements: ', elements)        
+    print('The number of identical elements: ')
+    for key in elements:
+        print(key, ': ', elements[key])    
     return elements
     
 number = int(input('Enter the number of list items: '))
