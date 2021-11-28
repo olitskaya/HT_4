@@ -1,5 +1,5 @@
 # Написати функцію, яка приймає на вхід список і
-# підраховує кількість однакових елементів у ньому.
+# підраховує список однакових елементів у ньому.
 
 def user_list(n):
     user_list_1 = []
@@ -11,13 +11,9 @@ def user_list(n):
     return user_list_1    
 
 def same(list_1):
-    result = 0
-    for i in list_1:
-        k = list_1.count(i)
-        if k > 2:
-            result += 1
-    print('The number of identical elements: ', result)        
-    return result
+    elements = {i:list_1.count(i) for i in list_1}
+    print('The number of identical elements: ', elements)        
+    return elements
     
 number = int(input('Enter the number of list items: '))
 test_list = user_list(number)  
