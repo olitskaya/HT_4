@@ -16,7 +16,7 @@ def is_prime(number):
 def prime_list(num_1, num_2):
     result_list = []
     for i in range(num_1, num_2):
-        if is_prime(i) == True:
+        if is_prime(i):
             result_list.append(i)
     print('List of prime numbers in a given range: ', result_list)
     return result_list                
